@@ -164,21 +164,23 @@ section{
 /*PROFILE SECTION*/
 #profile{
     display: flex;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 5rem; */
     height: 80vh;
+    padding: 0 5rem;
 }
 
 .section_pic-container{
     display: flex;
-    height: 400px;
+    height: 800px;
     width: 400px;
-    margin: auto 0;
+    margin-left: auto;
 }
 
 .section_text{
     align-self: center;
-    text-align: center;
+    text-align: left;
 }
 
 .section_text_p{
