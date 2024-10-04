@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+<!--Meril Experience-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience at Meril</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="meril.css" />
+
 </head>
 <body>
     <nav id="desktop-nav">
@@ -15,6 +20,18 @@
                 <li><a href="/index.html#about" 
                         class="nav-links"
                         onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" 
+                    class="nav-links"
+                    onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#education" 
+                        class="nav-links"
+                        onclick="toggleMenu()">Education</a></li>
+                <li><a href="#projects" 
+                    class="nav-links"
+                    onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact&socials" 
+                    class="nav-links"
+                    onclick="toggleMenu()">Contact & Socials</a></li>
             </ul>
         </div>
     </nav>
@@ -31,10 +48,27 @@
                     Chennai, India
                 </p>
             </div>
-            <div id="main-content"></div>
+            <div id="main-content">
+                <script>
+                    loadContent(); // Call the function to load content
+                </script>
+            </div>
+            <div class="right-side">
+                <div class="intro-image-cont">
+                    <img class="intro-image" src="/assets/meril/vapi-misso.jpeg">
+                </div>
+                <div class="project-links">
+                    <p class="ethercat">EtherCAT based Motor Driver For BLDC Control &rarr;</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <script src="experience-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            loadContent(); // Call the function to load content when the document is fully loaded
+        });
+    </script>
 </body>
 </html>
