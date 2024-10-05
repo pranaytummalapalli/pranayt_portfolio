@@ -26,6 +26,7 @@ nav{
     gap: clamp(20px, 3vw, 70px);
     list-style: none;
     font-size: clamp(20px, 2.3vw, 30px);
+    font-weight: 300;
 }
 
 a{
@@ -64,7 +65,7 @@ a:hover{
 .meril-experience-content{
     display: flex;
     flex: row;
-    margin-top: clamp(150px, 15vw, 250px);
+    margin-top: clamp(150px, 10vw, 250px);
     padding: 0 7vw 0 7vw;
 }
 
@@ -79,14 +80,14 @@ a:hover{
 }
 
 .role{
-    color: #4E4E4E;
-    font-size: clamp(16px, 2vw, 30px); /*<16px 30px> 820px*/
-    font-weight: 300;
+    color: #3f3f3f;
+    font-size: clamp(16px, 1.5vw, 25px); /*<16px 30px> 820px*/
+    font-weight: 250;
 }
 
 .company{
     color: #727070;
-    font-size: 1.8vw;
+    font-size: 1vw;
     font-weight: 200;
     margin-top: 0.7vh;
     
@@ -94,16 +95,34 @@ a:hover{
 
 .project{
     color: #424242;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 300;
     margin-top: 2.5vh;
 }
 
 .location{
     color: #727070;
-    font-size: 1.8vw;
+    font-size: 1vw;
     font-weight: 200;
-    margin-top: 1vh;
+    margin-top: 1.2vh;
+}
+
+.scroll-arrow{
+    position: fixed;
+    font-size: 1.3vw;
+    font-weight:400;
+    color: #727070;
+    margin-top: 70vh;
+    z-index: 1000;
+}
+
+.arrow{
+    position: fixed;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #727070;
+    margin-left: 10px;
+    z-index: 1000;
 }
 
 /*MIDDLE CONTAINER*/
@@ -111,7 +130,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     flex: 1.2;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0;
     text-align: left;
 }
@@ -124,20 +143,20 @@ a:hover{
 }
 
 .main-text{
-    max-width: 700px;
+    max-width: 600px;
     text-align: justify;
     color: #727070;
-    font-size: clamp(20px, 2vw, 30px); /*<20px  30px>*/
+    font-size: clamp(16px, 1.5vw, 25px); /*<20px  30px>*/
     font-weight: 350;
-    line-height: clamp(32px, 2.5vw, 50px); /*<35px  50px>*/
+    line-height: clamp(32px, 2.2vw, 50px); /*<35px  50px>*/
     padding: 0 2vw 0 2vw;
 }
 
 .heading{
     display: flex;
     color: #727070;
-    font-size: clamp(20px, 2vw, 40px); /*<19px 40px>*/
-    font-weight: 500;
+    font-size: clamp(20px, 2vw, 30px); /*<19px 40px>*/
+    font-weight: 400;
     text-align:center;
     hyphens: auto;
 }
@@ -171,12 +190,13 @@ a:hover{
 }
 
 .project-links{
-    margin-top: 5vw;
+    margin: 2.5vw 0 0 1vw;
 }
 
 .ethercat{
-    font-size: 1.5vw;
+    font-size: 1vw;
+    color:#676565;
     font-weight: 300;
-    text-align: right;
+    text-align: left;
 }
 
