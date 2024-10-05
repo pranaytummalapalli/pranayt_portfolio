@@ -26,14 +26,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', highlightNavLink);
     highlightNavLink(); // Initial call to highlight the active link on page load
+    
+    const currentPage = window.location.pathname.split('/').pop();
 
     // Load content when the page is loaded
-    loadContent();
+    if(currentPage === 'meril-exp.html'){
+        loadContent('content/meril-content.html');
+    }
+    else if(currentPage === 'articulus-exp.html'){
+        loadContent('content/articulus-content.html');
+    }
+    else{
+        console.error('Unsupported page:', currentPage);
+    }
 });
 
 // Function to load external content
-function loadContent() {
-    fetch('content/meril-content.html')
+function loadContent(fileName) {
+
+    fetch(fileName)
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
             return response.text();

@@ -1,0 +1,187 @@
+/* NAVIGATION */
+nav, 
+.nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 5vw; /* Keep the height as is */
+    padding-bottom: 30px; /* Adjust padding if necessary */
+    position: fixed; /* Make it fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: white; /* Set a background color */
+    padding-top: 30px;
+    z-index: 1000; 
+    
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: clamp(20px, 3vw, 70px);
+    list-style: none;
+    font-size: clamp(20px, 2.3vw, 30px);
+}
+
+a{
+    color: #676565;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+/*need to add section specific underlining*/
+
+/* text underline on hover and color change*/
+a:hover{                
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1vw;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+/* logo */
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+    text-decoration-color: rgb(181, 181, 181);
+    text-underline-offset: 1vw;
+    transition: 200ms ease;
+}
+
+/***********************************CONTAINERS*****************************************/
+.articulus-experience-content{
+    display: flex;
+    flex: row;
+    margin-top: clamp(150px, 15vw, 250px);
+    padding: 0 7vw 0 7vw;
+}
+
+/*LEFT CONTAINER*/
+.overview{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    width: 25%;
+    margin: 0% 
+    
+}
+
+.role{
+    color: #4E4E4E;
+    font-size: clamp(16px, 2vw, 30px); /*<16px 30px> 820px*/
+    font-weight: 300;
+}
+
+.company{
+    color: #727070;
+    font-size: 1.8vw;
+    font-weight: 200;
+    margin-top: 0.7vh;
+    
+}
+
+.project{
+    color: #424242;
+    font-size: 3vw;
+    font-weight: 300;
+    margin-top: 2.5vh;
+}
+
+.location{
+    color: #727070;
+    font-size: 1.8vw;
+    font-weight: 200;
+    margin-top: 1vh;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1.2;
+    max-width: 700px;
+    margin: 0;
+    text-align: left;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-text{
+    max-width: 700px;
+    text-align: justify;
+    color: #727070;
+    font-size: clamp(20px, 2vw, 30px); /*<20px  30px>*/
+    font-weight: 350;
+    line-height: clamp(32px, 2.5vw, 50px); /*<35px  50px>*/
+    padding: 0 2vw 0 2vw;
+}
+
+.heading{
+    display: flex;
+    color: #727070;
+    font-size: clamp(20px, 2vw, 40px); /*<19px 40px>*/
+    font-weight: 500;
+    text-align:center;
+    hyphens: auto;
+}
+
+/*RIGHT CONTAINER*/
+.right-side{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 36%;
+    justify-content: flex-start;
+    align-items: left;
+    object-fit: contain;
+    padding: 0 0 0 2vw;
+}
+
+.intro-image-cont{
+    display: flex;
+    width: 80%;
+    max-width: 500px;
+    min-width: 200px;
+    object-fit: contain;
+    
+}
+.intro-image{
+    width: 100%;
+    height: auto;
+    border-radius: 8%;
+    padding: 0;
+    margin: 0;
+}
+
+.project-links{
+    margin-top: 5vw;
+}
+
+.pulsar{
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-align: right;
+}
+
+.comet{
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-align: right;
+}
+
