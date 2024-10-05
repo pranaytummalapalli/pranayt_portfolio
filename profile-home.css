@@ -1,83 +1,76 @@
 .profile-home{
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    align-items: center;  
+    padding: 0 7vw 0 7vw;;
+    margin-top: 10vw;
 }
 
 /*TEXT ON HOME PAGE*/
 .intro-container{
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Center items vertically (if needed) */
-    align-items: right; /* Align items to the right (end) */
-    height: 200px; /* Set a height for vertical centering */
-    margin: 0; /* Center the container itself */
-    text-align: left; /* Align text to the right */
-    padding: 20px; /* Optional: add some padding for spacing */
-    margin-left: 500px;
+    
 
 }
 
 .hello{
     color: #424242;
-    font-size: 350px;
+    font-size: clamp(100px, 10vw, 350px);
     font-weight: 200;
-    height: 450px;
-    margin-top: -350px;
+
 }
 
 .im{
     color: #727070;
-    font-size: 60px;
+    font-size: clamp(20px, 2vw, 50px);
     font-weight: 350;
 }
 
 .name-designator{
     color: #727070;
-    font-size: 70px;
+    font-size: clamp(20px, 2.5vw, 50px);
     font-weight: 350;
 }
 
 .first-name{
     color: #424242;
-    font-size: 70px;
+    font-size: clamp(20px, 2.5vw, 50px);
     font-weight: 350;
 }
 
 .role-designator{
     color: #727070;
-    font-size: 40px;
-    font-weight: 350;
+    font-size: clamp(20px, 1.4vw, 40px);
+    font-weight: 300;
 }
 
 /*BUTTONS*/
 .resume-btn{
-    font-size: 40px;
+    font-size: clamp(20px, 1.4vw, 40px);
     margin-top: 40px;
     background-color: white;
     color: #999999;
     border-color: #999999;
     border-style: solid;
     border-width: 4px;
-    height: 80px;
-    width: 250px;
+    height: clamp(40px, 3.5vw, 80px);
+    width: clamp(100px, 8vw, 250px);
     border-radius: 40px;    
     cursor: pointer;
     margin-left: 10px;
 }
 
 .contact-btn{
-    font-size: 40px;
+    font-size: clamp(20px, 1.4vw, 40px);
     margin-top: 40px;
     background-color: #999999;
     color: white;
     border-style: none;
-    height: 80px;
-    width: 250px;
+    height: clamp(40px, 3.5vw, 80px);
+    width: clamp(100px, 8vw, 250px);
     border-radius: 40px;
     cursor: pointer;
-    margin-left: 40px;
+    margin-left: 1.5vw;
 }
 
 
@@ -123,15 +116,23 @@
 /*PROFILE PIC*/
 .pic-container{
     display: flex;
-    flex: 1.2;
-    width: 1300px;
-    overflow: hidden;
+    flex-direction: column;
+    flex: 1;
+    width: 36%;
+    justify-content: flex-start;
+    align-items: left;
+    object-fit: contain;
+    padding: 0;
+    max-width: 500px;
+    min-width: 200px;
 }
 
 .profile-pic{
-    width: 1200px;
-    object-fit: contain;
-    margin-top: 60px;
-    border-radius: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8%;
+    padding: 0;
+    margin: 0;
+    
 }
 

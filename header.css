@@ -20,10 +20,13 @@ nav{
 }
 
 .nav-links{
-    font-weight:300;
-    gap: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: clamp(20px, 3vw, 70px);
     list-style: none;
-    font-size: 2rem;
+    font-size: clamp(20px, 2.3vw, 30px);
+    font-weight: 300;
 }
 
 a{
@@ -54,6 +57,6 @@ a:hover{
 .nav-links a.active {
     text-decoration: underline;
     text-decoration-color: rgb(181, 181, 181);
-    text-underline-offset: 1rem;
+    text-underline-offset: 1vw;
     transition: 200ms ease;
 }

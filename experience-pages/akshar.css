@@ -62,7 +62,7 @@ a:hover{
 }
 
 /***********************************CONTAINERS*****************************************/
-.articulus-experience-content{
+.akshar-experience-content{
     display: flex;
     flex: row;
     margin-top: clamp(150px, 10vw, 250px);
@@ -175,8 +175,8 @@ a:hover{
 
 .intro-image-cont{
     display: flex;
-    width: 100%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 500px;
     min-width: 200px;
     object-fit: contain;
     
@@ -190,20 +190,13 @@ a:hover{
 }
 
 .project-links{
-    margin: 2.5vw 4vw 0 1vw;
+    margin: 2.5vw 8vw 0 0;
 }
 
-.pulsar{
+.arm{
     font-size: 1vw;
     color:#676565;
     font-weight: 300;
     text-align: right;
 }
 
-.comet{
-    font-size: 1vw;
-    color:#676565;
-    font-weight: 300;
-    text-align: right;
-    margin-top: 0.5vw;
-}

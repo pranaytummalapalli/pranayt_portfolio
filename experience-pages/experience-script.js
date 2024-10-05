@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
     else if(currentPage === 'articulus-exp.html'){
         loadContent('content/articulus-content.html');
     }
+    else if(currentPage === 'akshar-exp.html'){
+        loadContent('content/akshar-content.html');
+    }
     else{
         console.error('Unsupported page:', currentPage);
     }
