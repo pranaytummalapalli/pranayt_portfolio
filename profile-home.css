@@ -1,3 +1,8 @@
+section{
+    scroll-margin-top: 120px;
+
+}
+
 .profile-home{
     display: flex;
     flex-direction: row;
@@ -10,7 +15,7 @@
 .intro-container{
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Stack items vertically */
-    margin: 2vw 0 0 10vw;
+    margin: 4vw 0 0 10vw;
 
 }
 
@@ -18,31 +23,34 @@
     color: #424242;
     font-size: clamp(100px, 10vw, 350px);
     font-weight: 200;
-
 }
 
 .im{
     color: #727070;
     font-size: clamp(20px, 2vw, 50px);
     font-weight: 350;
+    margin: -1vw 0 0 0;
 }
 
 .name-designator{
     color: #727070;
     font-size: clamp(20px, 2.5vw, 50px);
     font-weight: 350;
+    margin: 1vw 0 0 0;
 }
 
 .first-name{
     color: #424242;
     font-size: clamp(20px, 2.5vw, 50px);
     font-weight: 350;
+    margin: 1vw 0 0 0;
 }
 
 .role-designator{
     color: #727070;
     font-size: clamp(20px, 1.4vw, 40px);
     font-weight: 300;
+    
 }
 
 /*BUTTONS*/

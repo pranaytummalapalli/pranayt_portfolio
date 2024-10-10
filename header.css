@@ -23,9 +23,9 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    gap: clamp(20px, 3vw, 70px);
+    gap: clamp(20px, 2.5vw, 60px);
     list-style: none;
-    font-size: clamp(20px, 2.3vw, 30px);
+    font-size: clamp(20px, 2vw, 25px);
     font-weight: 300;
 }
 
