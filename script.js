@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-links a');
 
     function highlightNavLink() {
-        let scrollPosition = window.scrollY || window.pageYOffset;
+        let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
+            const sectionTop = section.offsetTop - 200;
             const sectionHeight = section.clientHeight;
 
             if (scrollPosition >= sectionTop - sectionHeight / 3 &&

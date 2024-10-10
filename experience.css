@@ -1,30 +1,28 @@
 .experience-timeline{
     display: flex;
     flex-direction: row;
-    margin-top: 500px;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 1000px;;
+    align-items: flex-start;
+    padding: 0 7vw 0 7vw;;
+    margin-top: 8vw;
 }
 
 /*LEFT SIDE*/
 .left-side{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-right: 4vw;
 }
 
 .right-side{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-   
+    margin-left: 4vw;
 }
 
 .timeline{
     display: flex;
-    width: 300px;
-    margin-top: 100px;
+
 }
 
 
@@ -35,22 +33,21 @@
     justify-content: middle;
     align-items: right;
     text-align: right;
-    height: 100px;
-    margin-top: 200px;
-    margin-bottom: 300px;
+    margin-bottom: 7vw;
+    margin-top: 6vw;
 }
 
 .year{
-    color: black;
-    font-size: 35px;
+    color: #424242;
+    font-size: clamp(15px, 2vw, 25px);
     font-weight: 400;
 }
 
 .location{
-    margin-top: 10px;
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
+    margin-top: 5px;
+    color: #424242;
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: 350;
 }
 
 /*TIMESTAMP RIGHT*/
@@ -60,23 +57,11 @@
     justify-content: middle;
     align-items: left;
     text-align: left;
-    height: 100px;
-    margin-top: 200px;
-    margin-bottom: 300px;
+    margin-bottom: 7vw;
+    margin-top: 7vw;
+    
 }
 
-.year{
-    color: black;
-    font-size: 35px;
-    font-weight: 400;
-}
-
-.location{
-    margin-top: 10px;
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
-}
 
 /*ROLE*/
 .role-container{
@@ -85,39 +70,37 @@
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    margin-bottom: 100px;
     background-color: #f8f8f8;
-    padding: 50px;
-    padding-right: 100px;
+    max-width: 600px;
+    padding: 40px;
     border-radius: 80px;
+    
 }
 
 .role{
-    color: black;
-    font-size: 35px;
+    color: #424242;
+    font-size: 25px;
     font-weight: 300;
 }
 
 .company{
-    color:black;
-    font-size: 25px;
+    color:#424242;
+    font-size: 20px;
     font-weight: 300;
 }
 
 .project{
-    color: black;
-    font-size: 25px;
+    color: #424242;
+    font-size: 20px;
     font-weight: 300;
-    margin-top: 20px;
-    margin-left: 70px;
+    margin: 20px 0 0 30px;
 }
 
 .stack{
-    color: black;
-    font-size: 25px;
+    color: #424242;
+    font-size: 20px;
     font-weight: 300;
-    margin-top: 20px;
-    margin-left: 70px;
+    margin: 10px 0 0 30px;
 }
 
 /*hover*/
@@ -183,7 +166,7 @@
 .timeline{
     display: flex;
     justify-content: center; /* Center the timeline horizontally */
-    align-items: center; /* Center the timeline vertically (if needed) */
+    align-items: flex-start; /* Center the timeline vertically (if needed) */
     height: 100vh; /* Optional: full viewport height for centering vertically */
     position: relative;
 }
@@ -192,21 +175,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start ; 
-    border-left: 15px solid #424242; /* Vertical line */
-    height: 2000px; /* Set the height of the timeline */
+    border-left: 8px solid #424242; /* Vertical line */
+    height: 102vh; /* Set the height of the timeline */
     position: relative; 
-    margin-top: -100px;
+    margin-top: 10vh;
 }
 
 .circles {
     position: absolute; /* Position circles absolutely */
-    left: 130px; /* Adjust to position them near the line */
-    top: -460px;
+    left: -10px; /* Adjust to position them near the line */
+    top: -400px;
 }
 
 .circle1, .circle2, .circle3, .circle4 {
-    width: 40px; /* Circle diameter */
-    height: 40px; /* Circle diameter */
+    width: 30px; /* Circle diameter */
+    height: 30px; /* Circle diameter */
     border-radius: 50%; /* Make them circular */
     background-color: #424242; /* Circle color */
 
@@ -215,7 +198,7 @@
 /* Adjust the position of each circle */
 
 .circle2 {
-    margin-top:460px; /* Middle circle */
+    margin-top:0px; /* Middle circle */
 }
 .circle3 {
     margin-top: 460px /* Adjust this percentage for spacing */
